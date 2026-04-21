@@ -38,7 +38,7 @@ const products = [
     price: 299,
     isNew: false,
     inStock: true,
-    imageURL: "./assets/goldbangleset.png",
+    imageURL: "./assets/1.png",
     clicks: 52
   },
   {
@@ -50,7 +50,7 @@ const products = [
     price: 249,
     isNew: false,
     inStock: true,
-    imageURL: "./assets/silvercharmbracelet.png",
+    imageURL: "./assets/2.png",
     clicks: 11
   },
   {
@@ -62,7 +62,7 @@ const products = [
     price: 599,
     isNew: false,
     inStock: false,
-    imageURL: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=600&q=80",
+    imageURL: "./assets/3.png",
     clicks: 8
   },
   {
@@ -74,7 +74,7 @@ const products = [
     price: 449,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1576022162585-20fb5d5c5e76?w=600&q=80",
+    imageURL: "./assets/4.png",
     clicks: 6
   },
   {
@@ -86,7 +86,7 @@ const products = [
     price: 349,
     isNew: true,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=600&q=80",
+    imageURL: "./assets/5.png",
     clicks: 17
   },
   {
@@ -98,7 +98,7 @@ const products = [
     price: 899,
     isNew: false,
     inStock: false,
-    imageURL: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80",
+    imageURL: "./assets/6.png",
     clicks: 14
   },
   {
@@ -110,7 +110,7 @@ const products = [
     price: 279,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80",
+    imageURL: "./assets/7.png",
     clicks: 5
   },
   {
@@ -122,7 +122,7 @@ const products = [
     price: 199,
     isNew: true,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=600&q=80",
+    imageURL: "./assets/8.png",
     clicks: 28
   },
 
@@ -137,7 +137,7 @@ const products = [
     price: 399,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80",
+    imageURL: "./assets/9.png",
     clicks: 44
   },
   {
@@ -149,19 +149,19 @@ const products = [
     price: 749,
     isNew: false,
     inStock: false,
-    imageURL: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=600&q=80",
+    imageURL: "./assets/10.png",
     clicks: 39
   },
   {
     id: 11,
-    name: "Double Strand Pearl Necklace",
+    name: "Double Strand Necklace",
     category: "necklace",
     occasion: "event",
     description: "Two rows of freshwater pearls on a gold clasp. A timeless piece for weddings.",
     price: 649,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80",
+    imageURL: "./assets/11.png",
     clicks: 9
   },
   {
@@ -173,7 +173,7 @@ const products = [
     price: 329,
     isNew: true,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80",
+    imageURL: "./assets/12.png",
     clicks: 33
   },
   {
@@ -185,7 +185,7 @@ const products = [
     price: 289,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80",
+    imageURL: "./assets/13.png",
     clicks: 7
   },
   {
@@ -197,7 +197,7 @@ const products = [
     price: 549,
     isNew: false,
     inStock: false,
-    imageURL: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=600&q=80",
+    imageURL: "./assets/14.png",
     clicks: 12
   },
   {
@@ -209,19 +209,19 @@ const products = [
     price: 499,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80",
+    imageURL: "./assets/15.png",
     clicks: 4
   },
   {
     id: 16,
-    name: "Crystal Drop Necklace",
+    name: "Crystal Necklace",
     category: "necklace",
     occasion: "daily",
     description: "Clear crystal teardrop on a silver chain. Catches the light beautifully indoors and out.",
     price: 269,
     isNew: true,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80",
+    imageURL: "./assets/16.png",
     clicks: 24
   },
   {
@@ -233,7 +233,7 @@ const products = [
     price: 1299,
     isNew: false,
     inStock: false,
-    imageURL: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80",
+    imageURL: "./assets/17.png",
     clicks: 21
   },
 
@@ -248,7 +248,7 @@ const products = [
     price: 349,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1573408301185-9519f94de3b4?w=600&q=80",
+    imageURL: "./assets/18.png",
     clicks: 19
   },
   {
@@ -260,7 +260,7 @@ const products = [
     price: 199,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1573408301185-9519f94de3b4?w=600&q=80",
+    imageURL: "./assets/19.png",
     clicks: 3
   },
   {
@@ -272,19 +272,19 @@ const products = [
     price: 449,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80",
+    imageURL: "./assets/20.png",
     clicks: 6
   },
   {
     id: 21,
-    name: "Gold Nose Ring Set",
+    name: "Gold Necklace Set",
     category: "accessories",
     occasion: "daily",
     description: "Set of 3 small gold nose pins — plain, twisted, and stone-set. Subtle everyday wear.",
     price: 149,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1573408301185-9519f94de3b4?w=600&q=80",
+    imageURL: "./assets/21.png",
     clicks: 2
   },
   {
@@ -296,7 +296,7 @@ const products = [
     price: 229,
     isNew: true,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1631381854413-3f5d5c9a86e2?w=600&q=80",
+    imageURL: "./assets/22.png",
     clicks: 15
   },
   {
@@ -308,19 +308,19 @@ const products = [
     price: 179,
     isNew: false,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80",
+    imageURL: "./assets/23.png",
     clicks: 4
   },
   {
     id: 24,
-    name: "Mathapatti",
+    name: "Heavy Set",
     category: "accessories",
     occasion: "event",
     description: "Layered head piece with a central stone and cascading chains. A show-stopper for any bride.",
     price: 599,
     isNew: false,
     inStock: false,
-    imageURL: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80",
+    imageURL: "./assets/24.png",
     clicks: 11
   },
   {
@@ -332,7 +332,7 @@ const products = [
     price: 249,
     isNew: true,
     inStock: true,
-    imageURL: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80",
+    imageURL: "./assets/25.png",
     clicks: 18
   }
 

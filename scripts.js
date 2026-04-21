@@ -59,6 +59,9 @@ function loadClicksFromStorage() {
     }
 }
 
+
+
+
 // saving every product's current click count into localStorage
 // calling this right after incrementing so nothing gets lost on refresh
 // builds a plain object { productId: clickCount } then stringifies it
@@ -70,6 +73,8 @@ function saveClicksToStorage() {
     }
     localStorage.setItem(CLICKS_KEY, JSON.stringify(clickData));
 }
+
+
 
 
 // ── localStorage — wishlist ───────────────────────────────────────────────────
