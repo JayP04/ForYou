@@ -1,31 +1,140 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
+    <title>Collection For You</title>
+    <meta name="description" content="Handcrafted Indian jewelry — bracelets, necklaces, and accessories for every day and every occasion." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
   </head>
 
   <body>
-    <header class="main-header">
-      <h1 class="title">LA TV Shows</h1>
+
+    <!-- ── HEADER ─────────────────────────────────── -->
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="header-title">Mom's Jewelry</h1>
+        <p class="header-tagline">
+          Indian handcrafted pieces for every day, for every occasion,<br /> just for you.
+        </p>
+      </div>
     </header>
-    <div id="card-container"></div>
-    <div class="card" style="display: none">
-      <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
-        <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
-        </ul>
+
+    <!-- ── CONTROLS ───────────────────────────────── -->
+    <section class="controls-bar">
+      <div class="controls-inner">
+
+        <!-- Search -->
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M13 13L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input id="search-input" type="text" placeholder="Search pieces…" autocomplete="off" />
+        </div>
+
+        <!-- Category filters -->
+        <div class="filter-row">
+          <span class="filter-label">Category</span>
+          <div class="filter-pills">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="bracelet">Bracelets</button>
+            <button class="filter-btn" data-category="necklace">Necklaces</button>
+            <button class="filter-btn" data-category="accessories">Accessories</button>
+          </div>
+        </div>
+
+        <!-- Occasion filters -->
+        <div class="filter-row">
+          <span class="filter-label">Occasion</span>
+          <div class="filter-pills">
+            <button class="filter-btn active" data-occasion="all">All</button>
+            <button class="filter-btn" data-occasion="daily">Daily Wear</button>
+            <button class="filter-btn" data-occasion="event">Special Events</button>
+          </div>
+        </div>
+
+        <!-- Sort + Saved row — keeping these together since they're both about ordering/viewing -->
+        <div class="filter-row">
+          <span class="filter-label">Sort by</span>
+          <div class="filter-pills">
+            <button class="sort-btn" data-sort="popular">&#9733; Popular</button>
+            <button class="sort-btn" data-sort="price-low">Price ↑</button>
+            <button class="sort-btn" data-sort="price-high">Price ↓</button>
+            <span class="pill-divider"></span>
+            <button id="saved-toggle" class="sort-btn saved-toggle-btn">&#9825; saved</button>
+            <span class="pill-divider"></span>
+            <button id="clear-all-btn" class="clear-btn">&#x2715; clear all</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── RESULTS BAR ─────────────────────────────── -->
+    <div class="results-bar">
+      <span id="result-count">25 of 25 pieces</span>
+    </div>
+
+
+    <!-- ── CARD GRID ───────────────────────────────── -->
+    <main id="card-container"></main>
+
+    <!-- ── MODAL ──────────────────────────────────── -->
+    <!-- starts hidden — scripts.js fills it and shows it when a card is clicked -->
+    <div id="modal-overlay">
+      <div id="modal-box" role="dialog" aria-modal="true">
+
+        <button id="modal-close" aria-label="Close">&#x2715;</button>
+
+        <!-- left side: product image -->
+        <div id="modal-img-side">
+          <img id="modal-img" src="" alt="" />
+          <span id="modal-new-ribbon" class="new-ribbon" style="display:none;">NEW</span>
+        </div>
+
+        <!-- right side: all the details -->
+        <div id="modal-info-side">
+          <div id="modal-badges"></div>
+          <h2 id="modal-name"></h2>
+          <p id="modal-desc"></p>
+
+          <div class="modal-meta-row">
+            <span id="modal-price"></span>
+            <span id="modal-stock"></span>
+          </div>
+
+          <div class="modal-actions">
+            <a id="modal-wa-btn" class="action-btn wa-btn" target="_blank" rel="noopener noreferrer">
+              &#128172; WhatsApp
+            </a>
+            <a id="modal-email-btn" class="action-btn email-btn">
+              &#9993; Email Us
+            </a>
+            <button id="modal-save-btn" class="action-btn modal-save-btn">
+              save
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="footer">
-      <button onclick="quoteAlert()">Get A Quote!</button>
-      <button onclick="removeLastCard()">Remove A Card!</button>
-    </div>
+
+    <!-- ── FOOTER ─────────────────────────────────── -->
+    <footer class="site-footer">
+      <p class="footer-cta">
+        See something you love?&ensp;
+        <strong>Message us on WhatsApp or Facebook</strong> to order.
+      </p>
+      <p class="footer-note">Prices in INR &nbsp;·&nbsp; Stock varies &nbsp;·&nbsp; All pieces handcrafted</p>
+      <p class="footer-love">Made with ❤️ For You</p>
+    </footer>
+
+    <!-- data.js must load before scripts.js otherwise its creating issues-->
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
+
   </body>
 </html>
