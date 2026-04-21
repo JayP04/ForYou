@@ -611,9 +611,6 @@ function handleLikeClick(productId) {
         }, 600);
     }
 
-    // re-rendering the graph because the clicks array just changed
-    renderGraph();
-
     // if popular sort is on, waiting 2.5 seconds before re-sorting
     // so the card doesn't jump to the top the moment you click the heart
     if (currentSort === "popular") {
@@ -730,7 +727,6 @@ document.addEventListener("DOMContentLoaded", function() {
     loadClicksFromStorage();   // restoring saved likes into the products array
     loadWishlistFromStorage(); // restoring saved wishlist ids into the wishlist array
     filterAndRender();         // drawing all cards for the first time
-    renderGraph();             // drawing the popular picks chart
     setupListeners();          // wiring up every button, input, and key event
     refreshSavedToggleLabel(); // setting the initial label on the saved button
 });
