@@ -1,11 +1,13 @@
 // scripts.js
-// handling all the user interactions for the jewelry catalog
+// TRUST ME I HAVE COMMENTED HEAVEILY ON THIS. LOOKS SCARY BUT ITS PRETTY SIMPLE.
+
+
 // data comes from data.js — this file only reads from that array, never stores data
 
-// real way to contact my MOM without API ;) .
+// figured out areal way to contact my MOM without API ;) .
 const WHATSAPP_NUMBER = "918469232383";
 
-// names for the keys used to save stuff in localStorage
+// names for the keys used to save real stuff(data) in localStorage
 const CLICKS_KEY   = "jewelry_clicks";
 const WISHLIST_KEY = "jewelry_wishlist";
 // ─────────────────────────────────────────────────────────────────────────────
